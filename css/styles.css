@@ -79,28 +79,43 @@ img.intro {
   float: left;
 }
 
-.bios-border {
-  border-top: dotted 2px black;
-}
 
+.logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 .nav-bar {
   width: ;
   height: ;
   /*background-color: #e1b7bb;*/
 
 }
-.sidebar ul li  {
-  padding: 4% 5%;
+.center-div * {
+  /*border: 2px solid black;*/
+
+}
+
+.sidebar li  {
+  padding: 1% 5%;
   display: inline-block;
+  margin: auto;
   font-size: 20px;
-
+  color: white;
 }
-/*.sidebar img {
-
-}*/
-.logo {
-  text-align: center;
+.sidebar ul {
+  display: flex;
+  justify-content: space-around;
 }
+.sidebar {
+  background-color: darkred;
+  margin: 0 auto;
+}
+
+.bios-border {
+  border-top: dotted 2px black;
+}
+
 
 .logo img {
   width: 8%;
