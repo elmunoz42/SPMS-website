@@ -12,6 +12,7 @@ p.note {
   width: 50%;
   font-style: italic;
   font-weight: bold;
+  clear: left;
 }
 .important {
   width: 50%;
@@ -62,5 +63,37 @@ img.intro {
   color: red;
 }
 .comments {
-  
+
+}
+
+.biopics {
+  float: left;
+  clear: left;
+  width: 95%;
+}
+
+.columns {
+  width: 33%;
+  float: left;
+}
+
+.bios-border {
+  border: dotted 2px black;
+}
+.sidebar   {
+  width: 20%;
+  height: 200px;
+  float: right;
+
+
+}
+.nav-bar {
+  width: 80%;
+  height: 200px;
+  float: left;
+
+}
+
+.logo {
+
 }
