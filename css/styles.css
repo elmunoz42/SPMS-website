@@ -1,0 +1,17 @@
+p.intro {
+  width: 50%;
+  font-style: italic;
+}
+
+p.note {
+  width: 50%;
+  font-style: italic;
+  font-weight: bold;
+}
+.important {
+  width: 50%;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: crimson;
+}
