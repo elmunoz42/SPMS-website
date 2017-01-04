@@ -4,9 +4,11 @@ h2 {
 }
 
 p.intro {
-  width: 50%;
+  /*width: 50%;*/
   font-style: italic;
+  text-align: center;
 }
+
 
 p.note {
   width: 50%;
@@ -78,22 +80,32 @@ img.intro {
 }
 
 .bios-border {
-  border: dotted 2px black;
+  border-top: dotted 2px black;
 }
-.sidebar   {
-  width: 20%;
-  height: 200px;
-  float: right;
 
-
-}
 .nav-bar {
-  width: 80%;
-  height: 200px;
-  float: left;
+  width: ;
+  height: ;
+  /*background-color: #e1b7bb;*/
 
 }
+.sidebar ul li  {
+  padding: 4% 5%;
+  display: inline-block;
+  font-size: 20px;
 
+}
+/*.sidebar img {
+
+}*/
 .logo {
+  text-align: center;
+}
 
+.logo img {
+  width: 8%;
+  height: auto;
+  border: solid 2px grey;
+  padding: 1%;
+  float: left;
 }
