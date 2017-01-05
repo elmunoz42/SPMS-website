@@ -123,4 +123,27 @@ img.intro {
   border: solid 2px grey;
   padding: 1%;
   float: left;
+  
+}
+
+.bandpage-top {
+  display:
+  width: 20%;
+  border: 1px solid black;
+  height: 40em;
+  float: left;
+
+}
+.bandpage-top img {
+  width: 100%;
+}
+.bandpage-toptext {
+}
+/*.bandpage-top p {
+
+}*/
+.bandpage-text {
+  border: 2px solid;
+  width: 100%;
+  float: left;
 }
