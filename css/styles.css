@@ -16,6 +16,9 @@ p.note {
   font-weight: bold;
   clear: left;
 }
+.well {
+  font-size: 1.5em;
+}
 .important {
   width: 50%;
   font-style: italic;
@@ -47,7 +50,11 @@ p.note {
   text-shadow: 1px 1px 10px lightgrey;
 }
 .imgstyle {
+display: block;
+margin: 10px;
+/*used to be margin: auto*/
   width: 33%;
+  height: auto;
 }
 
 img.intro {
@@ -146,4 +153,23 @@ img.intro {
   border: 2px solid;
   width: 100%;
   float: left;
+}
+.about-pictures {
+  display: block;
+  /*margin-bottom: 10%;*/
+  width: 50%;
+}
+
+div.jumbotron.about-pictures {
+  display: block;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.jumbotron {
+  margin-top: 30px;
+  padding: 30px;
+
 }
