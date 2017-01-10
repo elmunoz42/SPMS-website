@@ -157,3 +157,26 @@ img.intro {
 #index-bottom-pix2 {
   display: none;
 }
+
+/* Event blog page */
+
+#dark-theme-button {
+  border: 3px solid crimson;
+}
+
+#gray-theme-button {
+  border: 3px solid crimson;
+}
+
+
+#normal-theme-button {
+  border: 3px solid crimson;
+}
+.toDarkTheme {
+  background-color: black;
+  color: white;
+}
+.toGrayTheme {
+  background-color: silver;
+  color: white;
+}

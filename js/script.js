@@ -6,4 +6,20 @@ $(function() {
     //$("#index-bottom-pix2").toggle();
 
   });
+
+  //Theme changer
+  $("#dark-theme-button").click(function() {
+    $("body").removeClass("toGrayTheme");
+    $("body").addClass("toDarkTheme");
+
+  });
+  $("#gray-theme-button").click(function() {
+    $("body").removeClass("toDarkTheme");
+    $("body").addClass("toGrayTheme");
+
+  });
+  $("#normal-theme-button").click(function() {
+    $("body").removeClass("toDarkTheme");
+    $("body").removeClass("toGrayTheme");
+  });
 });
