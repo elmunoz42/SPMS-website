@@ -22,4 +22,8 @@ $(function() {
     $("body").removeClass("toDarkTheme");
     $("body").removeClass("toGrayTheme");
   });
+
+  //Letter maker
+  
+
 });
