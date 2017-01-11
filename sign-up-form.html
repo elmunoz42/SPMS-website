@@ -52,13 +52,13 @@
     <div class="container">
 
       <h2>Sign-Up-Form</h2>
-      <form class="" action="index.html" method="post">
+      <form class="jumbotron" action="index.html" method="post">
         <div class="form-group">
           <label for="Family-Name">Family Name:</label>
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
-          <label for="Parent/Guardian-Name">Parent/Guardian Name:</label>
+          <label for="Parent-Guardian-Name">Parent/Guardian Name:</label>
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
@@ -70,7 +70,7 @@
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
-          <label for="Instrument/s-of-Interest">Instrument/s of Interest:</label>
+          <label for="Instruments-of-Interest">Instrument/s of Interest:</label>
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
@@ -86,7 +86,7 @@
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
-          <label for="Phone Number">Phone Number:</label>
+          <label for="Phone-Number">Phone Number:</label>
           <input type="text" name="" value="">
         </div>
         <div class="form-group">
@@ -114,35 +114,44 @@
       </form>
 
     </div>
-
-    <!-- sample letter -->
-    <div class="">
+    <div class="container">
+      <!-- sample letters -->
       <!-- to parent -->
-      <p>Dear <span id="Parent/Guardian-Name"></span> we would like to invite you to our upcoming event at Danvile Bowl and make sure that <span id="Assigned-Teacher"></span> is getting him ready for the level test. Please let us know what song <span id="Student-Name"></span> wants to perform at the recital. Also bellow choose at least three times you'd be available for the level test from the times bellow.</p>
-      <form class="" action="index.html" method="post">
-        <div class="form-group">
-          <label for="test-availability1">Best weekday/time:</label>
-          <input type="text" name="" value="">
-        </div>
-        <div class="form-group">
-          <label for="test-availability2">Second best weekday/time:</label>
-          <input type="text" name="" value="">
-        </div>
-        <div class="form-group">
-          <label for="test-availability3">Third best weekday/time:</label>
-          <input type="text" name="" value="">
-        </div>
-        <button type"submit" class="btn">Submit</button>
-      </form>
+      <div class="jumbotron">
+        <p>Dear <span id="Parent/Guardian-Name"></span> we would like to invite you to our upcoming event at Danvile Bowl and make sure that <span id="Assigned-Teacher"></span> is getting him ready for the level test. Please let us know what song <span id="Student-Name"></span> wants to perform at the recital. Also bellow choose at least three times you'd be available for the level test from the times bellow.</p>
+        <form class="jumbotron" action="index.html" method="post">
+          <div class="form-group">
+            <label for="test-availability1">Best weekday/time:</label>
+            <input type="text" name="" value="">
+          </div>
+          <div class="form-group">
+            <label for="test-availability2">Second best weekday/time:</label>
+            <input type="text" name="" value="">
+          </div>
+          <div class="form-group">
+            <label for="test-availability3">Third best weekday/time:</label>
+            <input type="text" name="" value="">
+          </div>
+          <button type"submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+
+    </div> <!-- container -->
+
+
+
 
       <!-- to teacher -->
-      <p>Hey, <span id="Assigned-Teacher"></span> so we have a prospective student - <span id="Student-Name"></span> - this is what <span id="Parent/Guardian-Name"></span> said about their musical experience:</p>
+      <p>Hey, <span id="Assigned-Teacher"></span> we have a prospective student - <span id="Student-Name"></span> - that is interested in learning the <span id="Instruments-of-Interest"></span>this is what <span id="Parent/Guardian-Name"></span> said about their musical experience:</p>
         <blockquote>
           "<span id="Musical-Experience"></span>"
         </blockquote>
-      p
-
-
+      <p>Would any of these times work for you:</p>
+        <blockquote>
+          <span id="time-availability1"></span>, <span id="time-availability2"></span> or <span id="time-availability3"></span>?
+        </blockquote>
+        Also please double check that your availability schedule is up to date.
 
     </div>
 
