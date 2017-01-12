@@ -34,8 +34,9 @@ p.note {
 
 #left-menu {
   float: left;
-  position: fixed;
+  /*position: fixed;*/
   width: 200px;
+  height: 1000px;
   display: block;
   margin: 10px;
   padding: 0px;
@@ -196,6 +197,10 @@ img.intro {
 
 #normal-theme-button {
   border: 3px solid crimson;
+}
+
+#instrument-picture {
+  width: 50%;
 }
 .toDarkTheme {
   background-color: black;
