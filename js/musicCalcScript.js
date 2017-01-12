@@ -75,13 +75,13 @@ $(document).ready(function() {
 	// });
 
   // displayChooser
-	$(".numberInput").submit(function(event){
+	$(".simpleInput").submit(function(event){
 		event.preventDefault ();
-		var menuItem = ($("#add1").val());
+		var menuItem = $("#simpleInput input").val();
 		var result = displayChooser(menuItem);
 		// debugger;
-		// alert(add(number1, number2));
-		$("#result-label-add").text(result);
+		alert(result);
+		$("#result-label-color").text(result);
 		});
 
 	});

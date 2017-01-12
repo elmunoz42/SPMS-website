@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/musicCalcScript.js"></script>
-    <script src="js/script.js">
+    <!-- <script src="js/script.js"> -->
 
     </script>
   </head>
@@ -90,14 +90,50 @@
         </div><!-- jumbotron -->
       </div><!-- jumbotron -->
 
-      <!-- color-picker-experiment -->
-      <div class="form-group" class="jumbotron">
-        <h4>Color</h4>
-        <form>
-          <input type="text" name="" value="">
-          <button id="color-picker" type="submit" name="button"></button>
-        </form>
-      </div><!--form-group-->
+      <!-- left menu  -->
+        <div class="jumbotron">
+          <h2>_____Different types of selectors:_____</h2>
+
+          <!-- simple input -->
+          <div class="form-group" class="jumbotron" class="simpleInput">
+            <h2>_______Simple Input:________</h2>
+            <h4>Color</h4>
+            <form>
+              <input id="simpleInput" type="text" name="button"></button>
+              <button class="submit" class="form-control" type="btn" name="button">compute!</button>
+            </form>
+          </div><!--form-group-->
+
+          <div id="leftMenu">
+
+            <h2>______Menu Buttons:_______</h2>
+            <ul>
+              <li ><input id="left-item1" type="button" value="color1"></li>
+              <li ><input id="left-item2" type="button" value="color2"></li>
+            </ul>
+          </div> <!-- left menu -->
+
+        <div class="radio" id="radioMenu">
+
+          <h2>______Radio Type Input:______</h2>
+          <label>
+            <input type="radio" name="rootPosition" value="color1" checked>color1 </label>
+          <label>
+            <input type="radio" name="firstInversion" value="color2">color2 </label>
+          <label>
+            <input type="radio" name="secondInversion" value="color3">color3 </label>
+        </div><!--radio-->
+
+        <h2>_______Result:______</h2>
+        <div class="jumbotron">
+          <div class="well">
+            <h2 id="result-label-color"></h2>
+          </div><!-- well -->
+        </div><!-- jumbotron -->
+      </div> <!--jumbotron-->
+
+
+
 
 
     </div><!--column2-->

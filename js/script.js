@@ -69,7 +69,7 @@ $(function() {
 
 // $("#color-picker button").submit(function() {
 
-})
+// })
 // alert(colorMenuItem = function($("#color-picker option").val()));
 
 });
