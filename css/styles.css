@@ -16,6 +16,24 @@ p.note {
   font-weight: bold;
   clear: left;
 }
+.left-menu-adjust {
+
+  margin-left: 200px;
+  padding-left: 30px;
+  padding-top: 7px;
+}
+
+
+
+#left-menu {
+  float: left;
+  position: fixed;
+  width: 200px;
+  display: block;
+  margin: 10px;
+  padding: 0px;
+  background-color: lightgray
+}
 .important {
   width: 50%;
   font-style: italic;
