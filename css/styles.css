@@ -23,6 +23,13 @@ p.note {
   padding-top: 7px;
 }
 
+.accessories-radio label{
+  text-align: left;
+  font-size: 15px;
+  display: block;
+  padding-left: 30px;
+  clear: both;
+}
 
 
 #left-menu {
