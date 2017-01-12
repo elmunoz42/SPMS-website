@@ -1,3 +1,7 @@
+
+var leftMenuItem = 2
+
+
 $(function() {
   $(".hover-pix").hover(function() {
     $("#index-bottom-pix2").toggle(),
@@ -36,5 +40,36 @@ $(function() {
     event.preventDefault();
   });
 
+  //Menu Item Display Changer
+  // var leftMenuItem = LT0
+
+
+  // $("input#left-item1").click(function() {
+  //    var newMenuItem = 3; //$("input#left-menu").val();
+  //    return newMenuItem;
+  //    alert (newMenuItem);
+  //   // alert($("input#left-menu").val());
+  // });
+    // instrument-picture
+  //   var displayChooser = function () {
+  //   var menuItem = $("input#left-menu").val()
+  //   if (menuItem === electric guitar) {
+  //     alert("electric guitar")
+  //   }
+  //   else if (menuItem === LT2) {
+  //     alert("acoustic guitar")
+  //
+  //   }
+  //   else {
+  //     alert("choose an instrument")
+  //   }
+  // }
+    // instrument-color
+    // var menuItem = $("#color-picker option").val()
+
+// $("#color-picker button").submit(function() {
+
+})
+// alert(colorMenuItem = function($("#color-picker option").val()));
 
 });

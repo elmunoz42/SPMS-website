@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css" media="all" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-  <script src="js/jquery-3.1.1.js"></script>
-  <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/script.js"></script>
   </head>
 
   <div class="nav-bar">
@@ -33,13 +32,13 @@
         <li>store</li>
       </ul>
     </div><!-- sidebar -->
-  </div> <!-- center div -->
+  </div> <!-- center div onclick="displayChooser()"-->
 
   <body>
     <div id="left-menu">
       <ul>
-        <li id="left-item1">electric guitar</li>
-        <li id="left-item2">acoustic guitar</li>
+        <li ><input id="left-item1" type="button" value="electric guitar"></li>
+        <li ><input id="left-item2" type="button" value="acoustic guitar"></li>
         <li id="left-item3">drum set</li>
         <li id="left-item4">keyboard</li>
         <li id="left-item5"></li>
@@ -75,7 +74,7 @@
           </p>
           <div class="form-group">
             <h4>Color</h4>
-            <select class="form-control" name="">
+            <select id="color-picker" class="form-control" name="">
               <option value="color1">green</option>
               <option value="color2">purple</option>
               <option value="color3">black</option>
