@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Music-Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/musicCalcScript.js"></script>
+    <script src="js/script.js">
+
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Music-Calculator</h1>
+      <div class="jumbotron">
+        <h4>Enter a starting note and return a chord, scale or other calculation</h4>
+
+        <form class="numberInput">
+          <div class="form-group">
+            <label for="add1">1st Number</label>
+            <input id="add1" class="form-control" type="text">
+          </div><!-- form-group -->
+          <div class="form-group">
+            <label for="add2">2nd Number</label>
+            <input id="add2" class="form-control" type="text">
+          </div><!-- form-group -->
+          <button class="submit" type="btn" name="button">compute!</button>
+        </form>
+
+        <div class="jumbotron">
+          <div class="well">
+            <h2 id="result-label-add"></h2>
+          </div><!-- well -->
+        </div><!-- jumbotron -->
+      </div><!-- jumbotron -->
+
+        <div class="jumbotron">
+          <h3>Major Chord Calculator</h3>
+        <form class="numberInput">
+          <div class="form-group">
+            <label for="starting-note">Starting Note</label>
+            <input id="starting-note" class="form-control" type="text">
+          </div><!-- form-group -->
+          <div class="form-group">
+            <select class="form-control" id="chord-type" name="">
+              <option value="0">majorChord</option>
+              <option value="1">minorChord</option>
+              <option value="2">diminishedChord</option>
+              <option value="3">augmentedChord</option>
+            </select>
+            <div class="radio">
+              <label>
+                <input type="radio" name="rootPosition" value="rootPosition" checked>Root Position </label>
+              <label>
+                 <input type="radio" name="firstInversion" value="firstInversion">First Inversion </label>
+              <label>
+                <input type="radio" name="secondInversion" value="secondInversion">Second Inversion </label>
+            </div><!--radio-->
+          </div><!-- form-group -->
+          <button class="submit" type="btn" name="button">compute!</button>
+        </form>
+        <div class="jumbotron">
+          <div class="well">
+            <h2 id="result-label-chords"></h2>
+          </div><!-- well -->
+        </div><!-- jumbotron -->
+      </div><!-- jumbotron -->
+
+
+    </div><!-- container -->
+  </body>
+</html>

@@ -28,11 +28,13 @@ $(function() {
     // $(".Family-Name").prepend(input);
     var inputFN=$("input#FN").val();
     var inputPG=$("input#PG").val();
-    var inputSN=$("input#SN").val()
+    var inputSN=$("input#SN").val();
+
     $("p .Parent-Guardian-Name").text(inputPG);
     $("p .Student-Name").text(inputSN);
 
-  event.preventDefault();
+    event.preventDefault();
   });
+
 
 });
