@@ -74,15 +74,24 @@ $(document).ready(function() {
 	// 	$("#result-label-chords").text(result);
 	// });
 
-  // displayChooser
-	$(".simpleInput").submit(function(event){
-		event.preventDefault ();
-		var menuItem = $("#simpleInput input").val();
-		var result = displayChooser(menuItem);
-		// debugger;
-		alert(result);
-		$("#result-label-color").text(result);
-		});
+  // displayChooser for SimpleFormInput
+	// $(".simpleInput").submit(function(event){
+	// 	var menuItem = $("#simpleInput").val();
+	// 	var result = displayChooser(menuItem);
+	// 	// debugger;
+	// 	alert(result);
+	// 	$("#result-label-color").text(result);
+	// 	event.preventDefault ();
+	// 	});
+
+		$(".menuButtons").submit(function(event){
+			var menuItem = $(".menuButtons button").val();
+			var result = displayChooser(menuItem);
+			// debugger;
+			alert(result);
+			$("#result-label-color").text(result);
+			event.preventDefault ();
+			});
 
 	});
 

@@ -1,31 +1,29 @@
 
 var leftMenuItem = 2
 
+function displayChooser(menuItem) {
+	if (menuItem === "option1") {
+	alert("option1");
+//this picture
+	}
+	else if (menuItem === "option2") {
+	alert("option2");
+//that picture
+	}
+	else {
+	alert("choose an instrument");
+	}
+  }
 
+
+/////////////////////User interface //////////////////////
 $(function() {
   $(".hover-pix").hover(function() {
     $("#index-bottom-pix2").toggle(),
     $("#index-bottom-pix1").toggle();
     // $("img").hide();
     //$("#index-bottom-pix2").toggle();
-
   });
-  //
-  // //Theme changer
-  // $("#dark-theme-button").click(function() {
-  //   $("body").removeClass("toGrayTheme");
-  //   $("body").addClass("toDarkTheme");
-  //
-  // });
-  // $("#gray-theme-button").click(function() {
-  //   $("body").removeClass("toDarkTheme");
-  //   $("body").addClass("toGrayTheme");
-  //
-  // });
-  // $("#normal-theme-button").click(function() {
-  //   $("body").removeClass("toDarkTheme");
-  //   $("body").removeClass("toGrayTheme");
-  // });
 
   //Letter maker
   $("#intake-form-SPMS").submit(function(event) {
@@ -39,6 +37,38 @@ $(function() {
 
     event.preventDefault();
   });
+
+  // displayChooser
+  $(".left-menu buttons").click(function(event){
+    var menuItem = $(".left-menu button").val();
+    var result = displayChooser(menuItem);
+    alert(result);
+    $("#result-label-color").text(result);
+    event.preventDefault();
+  });
+
+
+
+  //Theme changer
+  $("#dark-theme-button").click(function() {
+    $("body").removeClass("toGrayTheme");
+    $("body").addClass("toDarkTheme");
+
+  });
+
+  $("#gray-theme-button").click(function() {
+    $("body").removeClass("toDarkTheme");
+    $("body").addClass("toGrayTheme");
+
+  });
+
+  $("#normal-theme-button").click(function() {
+    $("body").removeClass("toDarkTheme");
+    $("body").removeClass("toGrayTheme");
+  });
+
+});
+
 
   //Menu Item Display Changer
   // var leftMenuItem = LT0
@@ -66,10 +96,3 @@ $(function() {
   // }
     // instrument-color
     // var menuItem = $("#color-picker option").val()
-
-// $("#color-picker button").submit(function() {
-
-// })
-// alert(colorMenuItem = function($("#color-picker option").val()));
-
-});

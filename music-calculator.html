@@ -95,26 +95,26 @@
           <h2>_____Different types of selectors:_____</h2>
 
           <!-- simple input -->
-          <div class="form-group" class="jumbotron" class="simpleInput">
+          <div class="form-group" class="jumbotron">
             <h2>_______Simple Input:________</h2>
             <h4>Color</h4>
-            <form>
+            <form class="simpleInput">
               <input id="simpleInput" type="text" name="button"></button>
               <button class="submit" class="form-control" type="btn" name="button">compute!</button>
             </form>
           </div><!--form-group-->
 
           <div id="leftMenu">
-
             <h2>______Menu Buttons:_______</h2>
-            <ul>
-              <li ><input id="left-item1" type="button" value="color1"></li>
-              <li ><input id="left-item2" type="button" value="color2"></li>
-            </ul>
+            <form class="menuButtons">
+              <label>
+              <button id="left-item1" type="submit" value="color1" name="color1">color1</label>
+              <label>
+              <button id="left-item2" type="submit" value="color2" name="color2">color2</label>
+            </form>
           </div> <!-- left menu -->
 
         <div class="radio" id="radioMenu">
-
           <h2>______Radio Type Input:______</h2>
           <label>
             <input type="radio" name="rootPosition" value="color1" checked>color1 </label>
