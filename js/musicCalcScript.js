@@ -1,5 +1,8 @@
 
 /////////////// business logic ////////////////////////
+var noteNames = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+
+
 function add (number1, number2) {
 	return number1 + number2;
 }
@@ -35,6 +38,7 @@ function perfectFifthNumber(startingNote) {
 	var perfectFifthNumber = noteNumber + 7;
 	return perfectFifthNumber;
 }
+
 function displayChooser(menuItem) {
 	if (menuItem === "color1") {
 	alert("color1");
@@ -52,20 +56,39 @@ function displayChooser(menuItem) {
 
 $(document).ready(function() {
 
-	//adding
-	//
-	// $(".numberInput").submit(function(event){
-	// 	event.preventDefault ();
-	// 	var number1 = parseInt($("#add1").val());
-	// 	var number2 = parseInt($("#add2").val());
-	// 	var result = add(number1, number2);
-	// 	// debugger;
-	// 	// alert(add(number1, number2));
-	// 	$("#result-label-add").text(result)
-	//
-	// });
+	//calculator
+
+	$(".numberInput").submit(function(event){
+		event.preventDefault ();
+		var number1 = parseInt($("#input1").val());
+		var number2 = parseInt($("#input2").val());
+		var operator = $("input:radio[name=operator]:checked").val();
+		console.log("1st number:" + number1);  /// for debugging
+		console.log("2nd number:" + number2); /// for debugging
+		console.log("operator:" + operator); /// for debugging
+		var result;
+		if (operator === "add") {
+			result = add(number1, number2);
+			console.log("add:" + result); /// for debugging
+		}
+		else if (operator === "subtract") {
+			result = subtract(number1, number2);
+			console.log("subtract:" + result); /// for debugging
+		}
+		else if (operator === "multiply") {
+			result = multiply(number1, number2);
+			console.log("multiply:" + result); /// for debugging
+		}
+		else if (operator === "divide"){
+			console.log("divide:" + result); /// for debugging
+			result = divide(number1, number2);
+		} else { alert("somethings wrong!")}
+		$("#result-label-add").text(result);
+
+	}); // calculator
 
 	// chords
+	//
 	// $(".numberInput").submit(function(event){
 	// 	event.preventDefault ();
 	// 	var startingNote = parseInt($("#startingNote").val());
@@ -84,14 +107,14 @@ $(document).ready(function() {
 	// 	event.preventDefault ();
 	// 	});
 
-		$(".menuButtons").submit(function(event){
-			var menuItem = $(".menuButtons button").val();
-			var result = displayChooser(menuItem);
-			// debugger;
-			alert(result);
-			$("#result-label-color").text(result);
-			event.preventDefault ();
-			});
+		// $(".menuButtons").submit(function(event){
+		// 	var menuItem = $(".menuButtons button").val();
+		// 	var result = displayChooser(menuItem);
+		// 	// debugger;
+		// 	alert(result);
+		// 	$("#result-label-color").text(result);
+		// 	event.preventDefault ();
+		// 	});
 
 	});
 
