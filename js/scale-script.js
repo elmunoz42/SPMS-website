@@ -26,8 +26,6 @@ notScaleNotes = [noteNamesClone.splice(1,1), noteNamesClone.splice(3,1), noteNam
 
 var scaleNotesMinor = noteNamesClone.slice();
 
-
-
 $(function(){
   alert("major scale: " + scaleNotesMajor);
   alert("minor scale: " + scaleNotesMinor);
@@ -35,8 +33,8 @@ $(function(){
 });
 
 
-/////////tried programming program NOT WORKING ////////
-  // alert("filteredScaleNotes: " + filteredScaleNotes);
+/////////tried .forEach program NOT WORKING ??? ////////
+
   // notScaleNumbersMajor.forEach(formula(noteNamesInside) {
   //   var notScaleNumbersMajor = [1,2,4,5,6];
   //   console.log("notScaleNumbersMajor: " + notScaleNumbersMajor);
