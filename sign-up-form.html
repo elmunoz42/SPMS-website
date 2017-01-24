@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="all" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/script.js"></script>  </head>
+    <script src="js/script.js"></script>
+    <script src="js/signupscript.js"></script>
+    </head>
   <body>
     <div class="nav-bar">
       <div class="logo">
@@ -49,10 +51,10 @@
       <h3>To sign up please fill out the bellow form AND contact Carlos or Cathy at <a href="mailto:info@starpowermusic.net" class="important">info@starpowermusic.net</a></h3> <h3>or by phone at (617)780-8362.</h3>
     </div><!-- container -->
 
-    <div id="intake-form-SPMS" class="container">
+    <div class="container">
 
       <h2>Sign-Up-Form</h2>
-      <form class="jumbotron">
+      <form class="jumbotron" id="intake-form-SPMS">
         <div class="form-group">
           <label for="Family-Name">Family Name:</label>
           <input id="FN" type="text" name="" value="">
@@ -60,6 +62,22 @@
         <div class="form-group">
           <label for="Parent-Guardian-Name">Parent/Guardian Name:</label>
           <input id="PG" type="text" name="" value="">
+        </div>
+        <div class="form-group">
+          <label for="Address">Address:</label>
+          <input id="AD" type="text" name="" value="">
+        </div>
+        <div class="form-group">
+          <label for="Phone-Number">Phone Number:</label>
+          <input id="PN" type="text" name="" value="">
+        </div>
+        <div class="form-group">
+          <label for="Cell-Number">Cell Number:</label>
+          <input id="CN" type="text" name="" value="">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input id="EM" type="text" name="" value="">
         </div>
         <div class="form-group">
           <label for="Student-Name">Student Name:</label>
@@ -81,22 +99,6 @@
           <label for="Assigned-Teacher">Assigned Teacher (if any):</label>
           <input id="AT" type="text" name="" value="">
         </div>
-        <div class="form-group">
-          <label for="Address">Address:</label>
-          <input id="A" type="text" name="" value="">
-        </div>
-        <div class="form-group">
-          <label for="Phone-Number">Phone Number:</label>
-          <input id="PN" type="text" name="" value="">
-        </div>
-        <div class="form-group">
-          <label for="Cell-Number">Cell Number:</label>
-          <input id="CN" type="text" name="" value="">
-        </div>
-        <div class="form-group">
-          <label for="Email">Email:</label>
-          <input id="E" type="text" name="" value="">
-        </div>
           <div class="form-group">
             <label for="time-availability1">Best weekday/time:</label>
             <input id="TI1"type="text" name="" value="">
@@ -109,9 +111,15 @@
             <label for="time-availability3">Third best weekday/time:</label>
             <input id="TI3"type="text" name="" value="">
           </div>
-          <div id="start-date">
+          <div id="SD">
             <label for="start-date">Possible Start Date</label>
-            <input id="start-date" class="form-control" type="date">
+            <input id="SD" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <select id="SO" name="">
+              <option value=false>I din't read or agree with payment and cancellation policy</option>
+              <option value=true>I read and agree with the payment and cancellation policy</option>
+            </select>
           </div>
           <button type"submit" class="btn">Submit</button>
 
