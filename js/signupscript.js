@@ -1,6 +1,6 @@
 
 
-function FamilyInfo (familyName, parentGuardianName, address, phoneNumber, cellNumber, email, signOff, students) {
+function FamilyInfo (familyName, parentGuardianName, address, phoneNumber, cellNumber, email, signOff) {
   this.familyName = familyName;
   this.parentGuardianName = parentGuardianName;
   this.addres = address;
@@ -8,7 +8,7 @@ function FamilyInfo (familyName, parentGuardianName, address, phoneNumber, cellN
   this.cellNumber = cellNumber;
   this.email = email;
   this.signOff = signOff;
-  this.students = students;
+  this.students = [];
 }
 
 function StudentInfo (studentName, studentAge, instrumentOfInterest, musicalExperience, assignedTeacher,  firstTimeAvailabilities) {
